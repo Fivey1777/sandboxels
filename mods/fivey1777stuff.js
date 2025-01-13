@@ -1,0 +1,96 @@
+elements.r74n_solid = {
+    name:"r74n",
+    hidden:false,
+    color: "#00ffff",
+    behavior: behaviors.WALL,
+    tempHigh: 74,
+    stateHigh: ["r74n_water"],
+    conduct: 1,
+    category: "r74n",
+    state: "solid",
+    density: 7400,
+};
+elements.r74n_water = {
+    hidden:false,
+    color: "#009999",
+    behavior: behaviors.LIQUID,
+    tempHigh: 740,
+    stateHigh: ["r74n_gas"],
+    conduct: 1,
+    tempLow: 74,
+    stateLow: "r74n_solid",
+    category: "r74n",
+    state: "liquid",
+    density: 740,
+};
+elements.r74n_steam = {
+    hidden:false,
+    color: "#aaffff",
+    behavior: [
+        "M1|M1|M1",
+        "M1|XX|M1",
+        "M1|M1|M1"
+    ],
+    category: "r74n",
+    state: "gas",
+    density: 74,
+};
+elements.frosted_ice = {
+    color: "#b7d6e4",
+    behavior: behaviors.WALL,
+    tempHigh: 5,
+    stateHigh: ["water"],
+    tempLow: -9,
+    stateLow: "frosted_ice",
+    category: "solids",
+    state: "solid",
+    density: 1727,
+};
+elements.packed_ice = {
+    hidden:false,
+    color: "#daeff9",
+    behavior: behaviors.WALL,
+    tempHigh: 5,
+    stateHigh: ["water"],
+    tempLow: -26,
+    stateLow: "packed_ice",
+    category: "solids",
+    state: "solid",
+    density: 2077,
+};
+elements.slaked_ice = {
+    hidden:false,
+    color: "#85c0ff",
+    behavior: behaviors.WALL,
+    tempHigh: 5,
+    stateHigh: ["water"],
+    tempLow: -79,
+    stateLow: "slaked_ice",
+    category: "solids",
+    state: "solid",
+    density: 2237,
+};
+elements.blue_ice = {
+    hidden:false,
+    color: "#4298f3",
+    behavior: behaviors.WALL,
+    tempHigh: 5,
+    stateHigh: ["water"],
+    tempLow: -124,
+    stateLow: "blue_ice",
+    category: "solids",
+    state: "solid",
+    density: 2437,
+};
+elements.trench_ice = {
+    hidden:false,
+    color: "#0169dd",
+    behavior: behaviors.WALL,
+    tempHigh: 5,
+    stateHigh: ["water"],
+    tempLow: -270,
+    stateLow: "trench_ice",
+    category: "solids",
+    state: "solid",
+    density: 3027,
+}
